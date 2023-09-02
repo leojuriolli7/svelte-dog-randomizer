@@ -39,7 +39,9 @@
     Randomize dog
   </Button>
 
-  <img class="dog-image" src={image} alt="Random dog" />
+  {#if image}
+    <img class="dog-image" src={image} alt="Random dog" />
+  {/if}
 </main>
 
 <style lang="scss">
